@@ -1,0 +1,14 @@
+C:\source\PongWebservice\PongWebservice\bin\Debug\netcoreapp2.1\PongWebservice.deps.json
+C:\source\PongWebservice\PongWebservice\bin\Debug\netcoreapp2.1\PongWebservice.runtimeconfig.json
+C:\source\PongWebservice\PongWebservice\bin\Debug\netcoreapp2.1\PongWebservice.runtimeconfig.dev.json
+C:\source\PongWebservice\PongWebservice\bin\Debug\netcoreapp2.1\PongWebservice.dll
+C:\source\PongWebservice\PongWebservice\obj\Debug\netcoreapp2.1\PongWebservice.csprojAssemblyReference.cache
+C:\source\PongWebservice\PongWebservice\obj\Debug\netcoreapp2.1\PongWebservice.csproj.CoreCompileInputs.cache
+C:\source\PongWebservice\PongWebservice\obj\Debug\netcoreapp2.1\PongWebservice.RazorAssemblyInfo.cache
+C:\source\PongWebservice\PongWebservice\obj\Debug\netcoreapp2.1\PongWebservice.RazorAssemblyInfo.cs
+C:\source\PongWebservice\PongWebservice\obj\Debug\netcoreapp2.1\PongWebservice.AssemblyInfoInputs.cache
+C:\source\PongWebservice\PongWebservice\obj\Debug\netcoreapp2.1\PongWebservice.AssemblyInfo.cs
+C:\source\PongWebservice\PongWebservice\obj\Debug\netcoreapp2.1\PongWebservice.RazorTargetAssemblyInfo.cache
+C:\source\PongWebservice\PongWebservice\bin\Debug\netcoreapp2.1\PongWebservice.pdb
+C:\source\PongWebservice\PongWebservice\obj\Debug\netcoreapp2.1\PongWebservice.dll
+C:\source\PongWebservice\PongWebservice\obj\Debug\netcoreapp2.1\PongWebservice.pdb
