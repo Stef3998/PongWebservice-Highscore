@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Threading.Channels;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -15,8 +17,8 @@ namespace PongWebservice.Controllers
     {
 
         private const string connection = "Data Source=ponglegends.database.windows.net;Initial Catalog=PongDatabase;User ID=legendsadmin;Password=P@ssw0rd;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
-        //private const string connection1 = "Server=tcp:mylogicalserver12345.database.windows.net,1433;Initial Catalog=customerdatabase;Persist Security Info=False;User ID=steffen;Password=Test12345;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
+        //private const string insertBruger = "insert into Bruger (Brugernavn) values (@Brugernavn)";
 
         // GET: api/Bruger
         [HttpGet]
@@ -40,7 +42,10 @@ namespace PongWebservice.Controllers
                                 int highscore = reader.GetInt32(2);
                                 int wins = reader.GetInt32(3);
                                 int loses = reader.GetInt32(4);
-                                int winstreak = reader.GetInt32(5);
+                                int ai_wins = reader.GetInt32(5);
+                                int ai_loses = reader.GetInt32(6);
+                                int block_highscore = reader.GetInt32(7);
+                                int block_total_points = reader.GetInt32(8);
 
                                 var bruger = new Bruger()
                                 {
@@ -48,7 +53,10 @@ namespace PongWebservice.Controllers
                                     Highscore = highscore,
                                     Wins = wins,
                                     Loses = loses,
-                                    Winstreak = winstreak
+                                    AI_Wins = ai_wins,
+                                    AI_Loses = ai_loses,
+                                    Block_Highscore = block_highscore,
+                                    Block_Total_Points = block_total_points
                                 };
 
                                 result.Add(bruger);
@@ -70,8 +78,21 @@ namespace PongWebservice.Controllers
 
         // POST: api/Bruger
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void PostBruger([FromBody] BrugerModel brugerModel)
         {
+            string insertBruger = "INSERT into Bruger (Bruger_Id, Brugernavn) VALUES (@Id, @Brugernavn)";
+
+            SqlConnection connect = new SqlConnection(connection);
+            using (SqlCommand insertCommand = new SqlCommand(insertBruger, connect))
+            {
+                Console.WriteLine(brugerModel.ID + "  " + brugerModel.Brugernavn);
+                connect.Open();
+                insertCommand.Parameters.AddWithValue("@Id", brugerModel.ID);
+                insertCommand.Parameters.AddWithValue("@Brugernavn", brugerModel.Brugernavn);
+                int rowsAffeced = insertCommand.ExecuteNonQuery();
+                //Console.WriteLine(rowsAffeced + " row(s) affected");
+            }
+
         }
 
         // PUT: api/Bruger/5
