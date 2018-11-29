@@ -12218,23 +12218,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\steff\\.nuget\\packages\\": {},
+    "C:\\Users\\Patrick\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\source\\PongWebservice\\PongWebservice\\PongWebservice.csproj",
+      "projectUniqueName": "C:\\source\\UltimatePong\\PongWebservice-Highscore\\PongWebservice\\PongWebservice.csproj",
       "projectName": "PongWebservice",
-      "projectPath": "C:\\source\\PongWebservice\\PongWebservice\\PongWebservice.csproj",
-      "packagesPath": "C:\\Users\\steff\\.nuget\\packages\\",
-      "outputPath": "C:\\source\\PongWebservice\\PongWebservice\\obj\\",
+      "projectPath": "C:\\source\\UltimatePong\\PongWebservice-Highscore\\PongWebservice\\PongWebservice.csproj",
+      "packagesPath": "C:\\Users\\Patrick\\.nuget\\packages\\",
+      "outputPath": "C:\\source\\UltimatePong\\PongWebservice-Highscore\\PongWebservice\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\steff\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Patrick\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

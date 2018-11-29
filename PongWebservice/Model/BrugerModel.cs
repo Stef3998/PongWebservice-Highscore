@@ -15,7 +15,7 @@ namespace PongWebservice.Model
             ID = id;
             Brugernavn = brugernavn;
         }
-
+        //bare slet mig
         public BrugerModel()
         {
 
